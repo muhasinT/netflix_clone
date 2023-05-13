@@ -1,0 +1,85 @@
+.list_item {
+    width: 305px;
+    height: 200px;
+    background-color: var(--main-color);
+    margin-right: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    video {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &:hover {
+        width: 325px;
+        height: 250px;
+        position: absolute;
+        top: -150px;
+        -webkit-box-shadow: 0px 2px 15px 0px rgba(255, 255, 255, 0.28);
+        box-shadow: 0px 2px 15px 0px rgba(255, 255, 255, 0.28);
+        border-radius: 5px;
+
+        img {
+            height: 140px;
+        }
+
+        .itemInfo {
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+
+            .genre {
+                font-size: 14px;
+                color: lightgray;
+                padding: 2px;
+
+                .itemInfoTop {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: gray;
+    
+    
+                }
+            }
+
+            .icons {
+                display: flex;
+                margin-bottom: 10px;
+
+                .icon {
+                    border: 2px solid white;
+                    padding: 4px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    font-size: 14px;
+                }
+
+            }
+
+
+
+            .describtion {
+                font-size: 11px;
+                margin-bottom: 10px;
+            }
+
+        }
+
+    }
+
+}
